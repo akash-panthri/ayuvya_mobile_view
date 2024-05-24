@@ -19,6 +19,7 @@ export default function PopupPanel() {
     <RxCross2 className='text-3xl'/>
     <div className="text-2xl font-bold">Leave a Review</div>
     <ReviewPanel />
+    <ReviewPanel />
     </div>
   )
 }
