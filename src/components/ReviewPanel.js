@@ -1,6 +1,7 @@
 import React from "react";
 import ReviewStar from "./ReviewStar";
 import LikeDislike from "./LikeDislike";
+import PraiseSection from "./PraiseSection";
 export default function ReviewPanel({sign, givenDatum}) {
   return (
     <div className="h-[17vh]">
@@ -9,7 +10,7 @@ export default function ReviewPanel({sign, givenDatum}) {
      
       <>
 
-      {sign ==='star' ? <ReviewStar rate={givenDatum.rating} /> :sign ==='like'? <LikeDislike />:<></>}
+      {sign ==='star' ? <ReviewStar rate={givenDatum.rating} /> :sign ==='like'? <LikeDislike />:<PraiseSection/>}
       </>
     </div>
   );
