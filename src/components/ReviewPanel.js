@@ -10,7 +10,7 @@ export default function ReviewPanel({sign, givenDatum}) {
      
       <>
 
-      {sign ==='star' ? <ReviewStar rate={givenDatum.rating} /> :sign ==='like'? <LikeDislike />:<PraiseSection/>}
+      {sign ==='star' ? <ReviewStar rate={givenDatum.rating} /> :sign ==='like'? <LikeDislike />:<PraiseSection praiseOption={givenDatum.praiseOption} />}
       </>
     </div>
   );

@@ -23,6 +23,20 @@
         "id": 4,
         "category": "Praise",
         "slogan": "It has been praised by many people",
-        "sign": "praise"
+        "sign": "praise",
+        "praiseOption": [
+            {
+                "id": 1,
+                "option": "Poor"
+            },
+            {
+                "id": 2,
+                "option": "Okay"
+            },
+            {
+                "id": 3,
+                "option": "Good"
+            }
+        ]
     }
 ]
