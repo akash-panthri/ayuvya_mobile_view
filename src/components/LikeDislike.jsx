@@ -1,24 +1,48 @@
-"use client"
-import React,{useState} from 'react'
-import {BiDislike, BiLike } from "react-icons/bi";
+"use client";
+import React, { useState } from "react";
+import { BiSolidLike, BiSolidDislike } from "react-icons/bi";
 export default function LikeDislike() {
-    const [inlike , setInlike] = useState("")
+  const [inlike, setInlike] = useState("");
   return (
-    <div className='flex flex-row w-[80%] justify-between '>
-    <span className='flex flex-row justify-between text-xl' color={inlike==='dislike' ? '#67b384':'#f0f0f0'} onClick={()=>{
-      setInlike("dislike")
-    }}>
-
-    <BiDislike className='mx-3 text-4xl' color={inlike==='like' ? '#67b384':'#f0f0f0'} />
-    no
-    </span>
-    <span className='flex flex-row justify-between text-xl' color={inlike==='like' ? '#67b384':'#f0f0f0'} onClick={()=>{
-      setInlike("like")
-    }}>
-
-    <BiLike className='mx-3 text-4xl'  />
-    yes
-    </span>
+    <div className="flex flex-row w-[80%] justify-between ">
+      <span
+        className="flex flex-row justify-between text-xl"
+        onClick={() => {
+          console.log("dislike clicked");
+          setInlike("dislike");
+        }}
+      >
+        <BiSolidDislike
+          className="mx-3 text-4xl"
+          color={inlike === "dislike" ? "#67b384" : "#D3D3D3"}
+        />
+        <span
+          className={`font-bold ${
+            inlike === "dislike" ? "text-[#67b384]" : "text-[#000]"
+          } `}
+        >
+          no
+        </span>
+      </span>
+      <span
+        className="flex flex-row justify-between text-xl"
+        onClick={() => {
+          console.log("like clicked");
+          setInlike("like");
+        }}
+      >
+        <BiSolidLike
+          className="mx-3 text-4xl"
+          color={inlike === "like" ? "#67b384" : "#D3D3D3"}
+        />
+        <span
+          className={`font-bold ${
+            inlike === "like" ? "text-[#67b384]" : "text-[#000]"
+          } `}
+        >
+          yes
+        </span>
+      </span>
     </div>
-  )
+  );
 }
