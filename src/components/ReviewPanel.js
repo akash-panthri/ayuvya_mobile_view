@@ -1,12 +1,16 @@
-import React from 'react'
-import { FaStar } from "react-icons/fa";
-import ReviewStar from './ReviewStar';
-export default function ReviewPanel(star) {
+import React from "react";
+import ReviewStar from "./ReviewStar";
+import LikeDislike from "./LikeDislike";
+export default function ReviewPanel({sign, givenDatum}) {
   return (
-    <div>
-    <div className="text-xl font-bold">Safety</div>
-    <div className="text-base font-semibold">Its good for the safety</div>
-{star ?<ReviewStar rate= {4}/>:<></>}
+    <div className="h-[17vh]">
+      <div className="text-lg font-bold">{givenDatum.category}</div>
+      <div className="text-base font-semibold text-gray-400">{givenDatum.slogan}</div>
+     
+      <>
+
+      {sign ==='star' ? <ReviewStar rate={givenDatum.rating} /> :sign ==='like'? <LikeDislike />:<></>}
+      </>
     </div>
-  )
+  );
 }

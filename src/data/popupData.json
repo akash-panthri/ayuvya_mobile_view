@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "category": "Safety",
+        "slogan": "It is very secure to use",
+        "sign": "star",
+        "rating": 5
+    },
+    {
+        "id": 2,
+        "category": "Communication",
+        "slogan": "The team responds immediately",
+        "sign": "star",
+        "rating": 4
+    },
+    {
+        "id": 3,
+        "category": "Would you recommend Trausti",
+        "slogan": "Would you recommend it to others",
+        "sign": "like"
+    },
+    {
+        "id": 4,
+        "category": "Praise",
+        "slogan": "It has been praised by many people",
+        "sign": "praise"
+    }
+]

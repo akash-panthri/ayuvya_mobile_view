@@ -8,7 +8,7 @@ export default function ReviewStar({rate}) {
         return (
           <label key={index}>
            
-                <FaStar className='text-[#ffaa4a]'
+                <FaStar className='text-3xl'
                   color={
                     givenRating < rate || givenRating === rate
                       ? "RGB(255,170,74)"
